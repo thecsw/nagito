@@ -29,10 +29,23 @@ func main() {
 	// Parse flags
 	shortenerUrl = flag.String("shortener", defaultShortenerUrl, "monokuma shortener's url")
 	urlsFile := flag.String("urls", "", "urls to shorten (newline-separated)")
+	export := flag.Bool("export", false, "export urls and keys to a file")
 	url := flag.String("url", "", "url to shorten")
 	key := flag.String("key", "", "key to use when shortening a url")
 	auth = flag.String("auth", "", "authentication token")
 	flag.Parse()
+
+	if *export {
+		links, err := haruhi.
+			URL(*shortenerUrl+"/export").
+			Header("Authorization", "Bearer "+*auth).
+			Get()
+		if err != nil {
+			log.Fatalf("exporting: %v", err)
+		}
+		fmt.Println(links)
+		os.Exit(0)
+	}
 
 	// createUrl is the url for the create endpoint.
 	createUrl = *shortenerUrl + "/create"
@@ -81,8 +94,8 @@ func processUrls(urlsFile string) bool {
 		if strings.Contains(url, ",") {
 			// Split url and key
 			urlAndKey := strings.Split(url, ",")
-			url = urlAndKey[0]
-			key = urlAndKey[1]
+			key = urlAndKey[0]
+			url = urlAndKey[1]
 		}
 		// Get short url
 		shortUrl, err := getShortUrl(url, key)
