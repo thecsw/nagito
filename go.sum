@@ -1,0 +1,12 @@
+github.com/go-chi/oauth v0.0.0-20210913085627-d937e221b3ef h1:lqU8HyH6bzhV+HHvgFaT2xBl19tcjs9F4UULmw3hTxc=
+github.com/go-chi/oauth v0.0.0-20210913085627-d937e221b3ef/go.mod h1:eFAdB6Jo7GOKhl1PWiN2lKPxgFr7dBFkRrsz6S5IwOs=
+github.com/gofrs/uuid v4.4.0+incompatible h1:3qXRTX8/NbyulANqlc0lchS1gqAVxRgsuW1YrTJupqA=
+github.com/gofrs/uuid v4.4.0+incompatible/go.mod h1:b2aQJv3Z4Fp6yNu3cdSllBxTCLRxnplIgP/c0N/04lM=
+github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
+github.com/thecsw/haruhi v0.3.0 h1:Om0Azs0aYvqA5E1O59o5Gl4mrBkwW4RtJkT5EMKVhAU=
+github.com/thecsw/haruhi v0.3.0/go.mod h1:ZCskUH8LmpStDG9+AZzaQ4pSAC9EP2CUfDwiRNyndHw=
+github.com/thecsw/rei v0.0.0-20230518033804-4553091d49d9 h1:4DeORv/U49BQTgD48PkWNNqz+DxQGqOK2TfRhtfStJg=
+github.com/thecsw/rei v0.0.0-20230518033804-4553091d49d9/go.mod h1:kAyBHKI07obcN+glfDrbM0K9zAOWnwVZAstHrOdkDP0=
+github.com/thecsw/rei v0.0.0-20230518051746-3154e045c36f h1:O15PrIcJXZzugwl1f7OIbTvqEaHzw9q8JyYCUpGNaOE=
+github.com/thecsw/rei v0.0.0-20230518051746-3154e045c36f/go.mod h1:kAyBHKI07obcN+glfDrbM0K9zAOWnwVZAstHrOdkDP0=
